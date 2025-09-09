@@ -2,12 +2,15 @@ from pathlib import Path
 import os
 
 def show_directory_files():
-    pass
+    path = Path('')
+    path = list(path.rglob('*'))
+    for i, items in enumerate(path):
+        print(f"{i+1}. {items}")
 
 def create_file():
-    
+    show_directory_files()
     try:
-        
+
         pass
 
     except Exception as err:
@@ -16,7 +19,7 @@ def create_file():
 def read_file():
     
     try:
-        
+
         pass
 
     except Exception as err:
@@ -25,7 +28,7 @@ def read_file():
 def update_file():
     
     try:
-        
+
         pass
 
     except Exception as err:
@@ -34,7 +37,7 @@ def update_file():
 def delete_file():
     
     try:
-        
+
         pass
 
     except Exception as err:
